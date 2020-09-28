@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    stages{
+        stage('Source') {
+            steps {
+                git 'git@github.com:youli-aa/jenkins.git'
+            }
+            
+            
+        }
+        stage('Compile') {
+            steps {
+                echo 'hello'
+            }    
+  
+        }
+    }  
+    
+}
